@@ -1,0 +1,333 @@
+@import "global";
+// start global
+
+html {
+  box-sizing: border-box;
+  &[lang] {
+    margin-top: 0 !important;
+  }
+}
+html {
+  scroll-behavior: initial;
+  /* свойство scroll-behavior не наследуется, применяется к прокручиваемым блокам */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #1e1e1e;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+p,
+h1,
+h2,
+h3,
+h4 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #1e1e1e;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: normal;
+}
+input,
+textarea {
+  box-shadow: none;
+}
+textarea {
+  &:focus {
+    outline: none;
+  }
+}
+input {
+  &:focus {
+    outline: none;
+  }
+}
+button {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}
+.epiic-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.epiic-content {
+  flex: 1 0 auto;
+}
+.epiic-footer {
+  flex: 0 0 auto;
+}
+.epiic-container {
+  max-width: 1244px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.epiic-container-fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.epiic__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  position: relative;
+}
+
+// end global
+
+// start apply
+.epiic-apply--start {
+  padding: 85px 0 85px;
+}
+.epiic-apply {
+  background-image: url(../images/apply/apply__bg.svg);
+  background-position: center;
+  &__img {
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 40px;
+  }
+  &__title {
+    font-size: 32px;
+    line-height: 39px;
+    margin-bottom: 60px;
+  }
+}
+.epiic-apply-form {
+  max-width: 600px;
+  margin: 0 auto;
+  &__title {
+    text-align: center;
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  .epiic-apply-form__item + .epiic-apply-form__item {
+    margin-top: 70px;
+    margin-bottom: 35px;
+  }
+  &__input-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__label {
+    display: block;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+    margin-bottom: 1px;
+  }
+  &__input {
+    width: 288px;
+    height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    padding: 8px 16px;
+  }
+  &__label-span {
+    font-weight: 400;
+  }
+  &__textarea {
+    padding: 8px 16px;
+    width: 600px;
+    height: 72px;
+    resize: none;
+    background-color: #ffffff;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+  &__select-wrapper {
+    width: 288px;
+  }
+  &__checkbox-wrapper {
+  }
+  &__checkbox-wrapper + &__checkbox-wrapper {
+    margin-top: 14px;
+  }
+  &__checkbox-span {
+    text-decoration: underline;
+  }
+  &__btn {
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    cursor: pointer;
+    padding-top: 4px;
+    margin: 50px auto 0;
+    display: block;
+    transition: all 0.15s;
+    background-color: #ff3666;
+    width: 232px;
+    height: 48px;
+    &:active {
+      transform: scale(0.97);
+    }
+    &:hover {
+      background-color: #c92e52;
+    }
+  }
+}
+.jq-selectbox {
+  .jq-selectbox__select {
+    height: 40px;
+    width: 288px;
+    padding: 8px 16px;
+    background: transparent;
+    background-color: #ffffff;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+    box-shadow: none;
+    text-shadow: none;
+    font-family: "Fira Sans";
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  .jq-selectbox__trigger {
+    top: 16px;
+    right: 16px;
+    width: 17px;
+    height: 9px;
+    border-left: none;
+    background-image: url(../images/sprite.svg);
+    background-position: 0px 34px;
+  }
+  .jq-selectbox__trigger-arrow {
+    display: none;
+  }
+  .jq-selectbox__dropdown {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.16);
+    border-radius: 4px;
+    margin: 0;
+    border: none;
+    font-family: "Fira Sans";
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+
+    li {
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: #1e1e1e;
+      margin: 0 16px 7px;
+      padding: 0;
+      padding-bottom: 3px;
+      transition: all 0.2s;
+      &:hover {
+        background-color: transparent;
+        color: #59c69f;
+      }
+    }
+    li:nth-child(1) {
+      margin-top: 15px;
+      border-bottom: 1px solid #f1c527;
+      padding-bottom: 12px;
+    }
+    li:last-child {
+      margin-bottom: 10px;
+    }
+  }
+}
+.jq-selectbox.focused {
+  .jq-selectbox__select {
+    background-color: #ffffff;
+    border: 1px solid #dadada;
+    border-radius: 4px;
+  }
+}
+.jq-selectbox li.selected {
+  background-color: transparent;
+}
+.jq-checkbox,
+.jq-radio {
+  vertical-align: -3px;
+  width: 16px;
+  height: 16px;
+  margin: 0px 8px 0 0;
+  border: 2px solid #1e1e1e;
+  background: white;
+  box-shadow: none;
+}
+.jq-checkbox.focused,
+.jq-radio.focused {
+  border: 2px solid #1e1e1e;
+}
+.jq-checkbox.checked .jq-checkbox__div {
+  width: 15px;
+  height: 12px;
+  margin: 0;
+  border: none;
+  transform: rotate(0deg);
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    left: -1px;
+    top: 0;
+    background-image: url(../images/apply/apply__checkbox.svg);
+    transform: scale(0.8);
+  }
+}
+
+// end apply
+
+// start apply-start
+.epiic-apply--finish {
+  text-align: center;
+  padding: 180px 0;
+  display: none;
+  .epiic-apply__title {
+    font-size: 28px;
+    line-height: 34px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .epiic-apply__text {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+// end apply-finish
+
+@import "_apply__media";

@@ -1,0 +1,17 @@
+@keyframes header-call-bubble {
+  0% {
+    transform: translate(0px, 0px);
+
+  }
+  10% {
+
+    transform: translate(3px, -7px);
+  }
+  20%,
+  100% {
+
+    transform: translate(0px, 0px);
+  }
+}
+
+// animation: name duration timing-function delay iteration-count direction fill-mode;

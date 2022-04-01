@@ -1,0 +1,461 @@
+@media (max-width: 1239px) {
+  .gac-container {
+    max-width: 1024px;
+  }
+  .gac-header {
+    .gac-container {
+      max-width: 1244px;
+    }
+  }
+  .gac-menu {
+    margin-left: 10px;
+  }
+  .gac-logo {
+    width: 200px;
+    img {
+      width: 100%;
+    }
+  }
+  .gac-call {
+    margin-left: 15px;
+    font-size: 17px;
+  }
+  .gac-call .gac-call__link {
+    &::before {
+      background-size: cover;
+      width: 13px;
+      height: 14px;
+      left: -23px;
+      top: 3px;
+    }
+    &::after {
+      background-size: cover;
+      left: -15px;
+      top: -5px;
+      width: 14px;
+      height: 14px;
+    }
+  }
+  .gac-login__link {
+    font-size: 15px;
+    padding: 8px 19px;
+  }
+  .gac-call {
+    margin-right: auto;
+  }
+  .gac-menu .gac-menu__item + .gac-menu__item {
+    margin-left: 12px;
+  }
+  .gac-menu__item {
+    font-size: 15px;
+  }
+  .gac-footer-nav {
+    margin-right: 0;
+    &__item {
+      margin-right: 47px;
+    }
+    &__col {
+      width: 23%;
+    }
+  }
+  .gac-bundles__subtitle {
+    br {
+      display: none;
+    }
+  }
+  .gac-bundles__title {
+    margin-bottom: 55px;
+  }
+  .gac-keep-main .gac-keep-item {
+    max-width: 187px;
+    padding: 32px 14px 14px 14px;
+  }
+}
+
+//---------------------------------------------------------------------------------------------------------------
+
+@media (max-width: 1023px) {
+  .gac-container {
+    max-width: 768px;
+  }
+  .gac-index__title {
+    font-size: 36px;
+    line-height: 45px;
+  }
+  .gac-header {
+    padding-top: 24px;
+    .gac-header-top {
+      position: relative;
+      .gac-header-mobile {
+        display: none;
+      }
+    }
+  }
+  .gac-menu-btn {
+    display: block;
+  }
+  .gac-footer {
+    .gac-language-inner {
+      margin-bottom: 43px;
+      margin-top: 35px;
+    }
+    &-inner {
+      display: block;
+    }
+    &-nav {
+      justify-content: space-between;
+    }
+    &-other {
+      margin: 0 auto;
+      max-width: 335px;
+    }
+    &-nav__min-height {
+      min-height: auto;
+    }
+    &-nav__col {
+      width: 20%;
+    }
+  }
+  .gac-language__link {
+    position: relative;
+  }
+  .gac-language .gac-drop-down__list span {
+    position: absolute;
+    right: -17px;
+    top: 1.5px;
+  }
+  .gac-footer-form__input {
+    width: 335px;
+    max-width: 100%;
+  }
+  .gac-footer .gac-language-inner .gac-drop-down__list {
+    display: flex;
+    top: 7px;
+    right: -40px;
+    .gac-language__link {
+      margin-top: 0;
+    }
+    .gac-language__link + .gac-language__link {
+      margin-left: 27px;
+    }
+  }
+  .gac-footer .gac-language-inner .gac-language {
+    padding-right: 30px;
+    &::after {
+      transform: rotate(-90deg);
+      right: 15px;
+      top: 9.5px;
+    }
+  }
+  .gac-footer-form:after {
+    right: 65px;
+  }
+  .gac-header-top::before {
+    background-size: cover;
+    width: 358px;
+    height: 335px;
+    left: -88px;
+    top: -165px;
+  }
+  .gac-bundles-inner {
+    position: relative;
+  }
+  .gac-bundles-img {
+    position: absolute;
+    left: 50%;
+    top: 85px;
+    transform: translate(-50%, 0);
+    margin-left: 0;
+    width: 260px;
+    img {
+      width: 100%;
+    }
+  }
+  .gac-bundles-text {
+    text-align: center;
+    .gac-bundles__subtitle,
+    .gac-bundles__list {
+      text-align: left;
+    }
+  }
+  .gac-bundles__title {
+    padding-bottom: 400px;
+    &::before {
+      transform: scale(0.75);
+      right: -22px;
+      top: 38px;
+    }
+  }
+  .gac-bundles-text {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .gac-bundles {
+    position: relative;
+    background-color: #f5f5f5;
+    &::before {
+      content: "";
+      background-image: url(../images/grey-bg-up.png);
+      position: absolute;
+      top: -7px;
+      left: 0;
+      width: 100%;
+      height: 530px;
+      background-repeat: repeat-x;
+      background-color: white;
+      background-position: bottom;
+    }
+    &::after {
+      content: "";
+      background-image: url(../images/grey-bg-down.png);
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: -7px;
+      left: 0;
+      width: 100%;
+      height: 8px;
+      z-index: 99;
+    }
+  }
+
+  .gac-keep {
+    background-color: #fff;
+    padding-bottom: 30px;
+    &::after,
+    &::before {
+      display: none;
+    }
+    &__title {
+      br {
+        display: none;
+      }
+    }
+  }
+
+  .gac-keep-main {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .gac-keep-item.gac-keep-item--custom {
+    display: block;
+  }
+  .gac-keep-custom .gac-keep-item,
+  .gac-keep__text {
+    display: none;
+  }
+  .gac-keep-main .gac-keep-item {
+    margin-bottom: 40px;
+    max-width: 216px;
+  }
+}
+
+//---------------------------------------------------------------------------------------------------------------
+
+@media (max-width: 767px) {
+  .gac-container {
+    max-width: 667px;
+  }
+  .gac-footer {
+    &-form__btn {
+      width: 175px;
+    }
+    &-other {
+      max-width: 335px;
+    }
+    &-nav__col {
+      width: 30%;
+    }
+  }
+  .gac-footer-form:after {
+    right: 40px;
+  }
+  .gac-keep__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .gac-keep-main .gac-keep-item {
+    max-width: 190px;
+  }
+  .gac-keep-item__img {
+    transform: scale(1.2);
+  }
+}
+
+//---------------------------------------------------------------------------------------------------------------
+
+@media (max-width: 666px) {
+  .gac-container {
+    max-width: 480px;
+    padding: 0 16px;
+  }
+  .gac-index__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .gac-main {
+    padding: 70px 0 110px;
+  }
+  #gac-modal {
+    .gac-menu__name {
+      font-size: 20px;
+    }
+    .gac-menu__link {
+      font-size: 16px;
+    }
+  }
+  .gac-footer {
+    &-end {
+      margin-top: -21px;
+      font-size: 12px;
+    }
+    &-form::after {
+      right: 40px;
+    }
+    &-nav__col {
+      width: 43%;
+    }
+    &-form__text {
+      font-size: 20px;
+    }
+    .gac-footer-nav__col:nth-child(2) {
+      .gac-footer-nav__item:nth-child(1) {
+        margin-top: 53px;
+      }
+    }
+    .gac-language-inner .gac-language {
+      padding-right: 25px;
+    }
+    .gac-language-inner__text {
+      margin-right: 10px;
+    }
+    .gac-language-inner .gac-language::after {
+      right: 10px;
+    }
+  }
+  .gac-bundles-img {
+    top: 83px;
+    width: 190px;
+    img {
+      width: 100%;
+    }
+  }
+  .gac-bundles__title {
+    padding-bottom: 300px;
+    font-size: 36px;
+  }
+  .gac-bundles::before {
+    height: 425px;
+  }
+  .gac-bundles__subtitle {
+    margin-bottom: 20px;
+    font-size: 17px;
+  }
+  .gac-bundles__list {
+    font-size: 17px;
+  }
+  .gac-bundles__item + .gac-bundles__item {
+    margin-top: 17px;
+  }
+  .gac-keep {
+    padding-bottom: 15px;
+    &__title {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+//---------------------------------------------------------------------------------------------------------------
+
+@media (max-width: 479px) {
+  .gac-container {
+    max-width: 375px;
+  }
+  .gac-index__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .gac-logo {
+    width: 144px;
+    height: 18px;
+    img {
+      width: 100%;
+    }
+  }
+  .gac-call {
+    font-size: 16px;
+    margin-left: 15px;
+    .gac-call__link {
+      &::before {
+        width: 12px;
+        height: 12px;
+        left: -23px;
+        top: 6px;
+      }
+      &::after {
+        left: -16px;
+        top: -2px;
+        width: 12.8px;
+        height: 13px;
+      }
+    }
+  }
+  #gac-modal {
+    .gac-menu__item-col:nth-child(2) {
+      margin-right: 6px;
+    }
+    .gac-menu__link {
+      font-size: 17px;
+    }
+  }
+
+  .gac-header-top::before {
+    width: 254px;
+    height: 237px;
+    left: -100px;
+    top: -110px;
+  }
+  .gac-bundles__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+  .gac-keep-main .gac-keep-item {
+    max-width: 160px;
+    height: 267px;
+    padding: 25px 8px 8px 8px;
+    &__img {
+      margin-bottom: 10px;
+    }
+    &__name {
+      font-size: 26px;
+      line-height: 30px;
+      margin-bottom: 3px;
+    }
+    &__cost {
+      font-size: 22px;
+      line-height: 26px;
+      margin-bottom: 8px;
+    }
+    &__save {
+      font-size: 18px;
+      line-height: 20px;
+    }
+    &__subsave {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+    &__link {
+      font-size: 16px;
+    }
+  }
+  .gac-keep-item.gac-keep-item--custom {
+    .gac-keep-item__cost-label {
+      font-size: 22px;
+      line-height: 34px;
+    }
+    .gac-keep-item__cost {
+      font-size: 22px;
+      margin-bottom: 0;
+    }
+  }
+}

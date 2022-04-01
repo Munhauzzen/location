@@ -1,0 +1,86 @@
+@media (max-width: 1239px) {
+  .epiic-container {
+    max-width: 1024px;
+  }
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------@media (max-width: 1239px) {}
+
+@media (max-width: 1023px) {
+  .epiic-container {
+    max-width: 768px;
+  }
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------@media (max-width: 1239px) {}
+
+@media (max-width: 767px) {
+  .epiic-container {
+    max-width: 667px;
+  }
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------@media (max-width: 1239px) {}
+
+@media (max-width: 666px) {
+  .epiic-container {
+    max-width: 480px;
+    padding: 0 16px;
+  }
+  .epiic__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .epiic-apply-form__input-row {
+    display: block;
+  }
+  .epiic-apply-form__input,
+  .epiic-apply-form__select-wrapper,
+  .jq-selectbox,
+  .epiic-apply-form__select,
+  .jq-selectbox .jq-selectbox__select,
+  .epiic-apply-form__textarea {
+    width: 100%;
+  }
+  .epiic-apply--start {
+    padding: 50px 0;
+  }
+  .epiic-apply--finish{
+    padding: 100px 0;
+  }
+  .epiic-apply__title {
+    margin-bottom: 40px;
+  }
+  .epiic-apply-form__input-row {
+    margin-bottom: 0;
+  }
+  .epiic-apply-form__input,
+  .epiic-apply-form__select {
+    margin-bottom: 20px;
+  }
+  .epiic-apply-form .epiic-apply-form__item + .epiic-apply-form__item {
+    margin-top: 40px;
+  }
+}
+
+//---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+@media (max-width: 479px) {
+  .epiic-container {
+    max-width: 375px;
+  }
+  .epiic__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .epiic-apply-form__label {
+    font-size: 15px;
+  }
+  .epiic-apply-form__title {
+    width: 235px;
+    margin: 0 auto 30px;
+  }
+  .epiic-apply--start .epiic-apply__img{
+    width: 100%;
+  }
+}
